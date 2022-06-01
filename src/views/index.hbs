@@ -81,7 +81,7 @@
             <!--<img src="/assets/logo.png" width="250px" height="103px" />--> <br><br><br>
         </div>
         <h2 class="text-center head-text">TWIBBON BEM STAI BHAKTI PERSADA BANDUNG</h2>
-        <h6 class="text-center subhead-text">Marhaban yaa Ramadhan, pucuk selasih bertunas menjulang dahannya patah tolong betulkan. Puasa Ramadan kembali menjelang, salah dan khilaf mohon dimaafkan. Selamat Menunaikan Ibadah puasa.</h6>
+        <h6 class="text-center subhead-text">"Selamat Hari Lahir Pancasila. Mari perkokoh persatuan dan kesatuan bangsa untuk Indonesia lebih baik."</h6>
         <p class="text-center text-muted small copyright-text">
         JURUSAN : 
 		<br><i class="fa fa-graduation-cap"></i><a href="#"> MANAJEMEN PENDIDIKAN ISLAM</a>
@@ -98,9 +98,9 @@
             </div>-->
            
 	   <div class="custom-control custom-radio pilih-twibbon">
-                <input type="radio" onchange="$('.pilih-foto').show();" class="custom-control-input" id="ramadhanbersamabem"
-                    name="twibbonType" value="ramadhanbersamabem">
-                <label class="custom-control-label" for="ramadhanbersamabem">#MenggapaiTazkiyatunNafsidiBulanSuci_BEMSTAIBHAPER</label>
+                <input type="radio" onchange="$('.pilih-foto').show();" class="custom-control-input" id="bempancasila"
+                    name="twibbonType" value="bempancasila">
+                <label class="custom-control-label" for="bempancasila">#HariPancasila2022_BEMSTAIBHAPER</label>
             </div>
 			
 			<!--<div class="custom-control custom-radio pilih-twibbon">
@@ -216,30 +216,15 @@
             }
         }
     </script>
-	<!--<script>
-$(document).bind('contextmenu',function(e) {
-alert('Maaf Tidak bisa klik kanan atau copas')
-location.reload();
-return false;
-});
-document.onkeydown = function(e) {
-if(event.keyCode == 123) {
-return false;
-}
-if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
-alert('Maaf Tidak bisa klik kanan atau copas')
-return false;
-}
-if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
-alert('Maaf Tidak bisa klik kanan atau copas')
-return false;
-}
-if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
-alert('Maaf Tidak bisa klik kanan atau copas')
-return false;
-}
-}
-</script>-->
+	<script>
+		var pesen="Afwan... tidak bisa klik kanan ya... ";
+		///////////////////////////////////
+		function clickIE4(){if (event.button==2){alert(pesen);return false;}}
+		function clickNS4(e){if (document.layers||document.getElementById&&!document.all){if (e.which==2||e.which==3){alert(pesen);return false;}}}
+		if (document.layers){document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS4;}
+		else if (document.all&&!document.getElementById){document.onmousedown=clickIE4;}
+		document.oncontextmenu=new Function("alert(pesen);return false")
+	</script>
 </body>
 
 </html>
